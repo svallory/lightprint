@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "#inputs": ["./src/components/inputs/index.ts"],
+      "#inputs/*": ["./src/components/inputs/*"],
+      "#feedback": ["./src/components/feedback/index.ts"],
+      "#feedback/*": ["./src/components/feedback/*"],
+      "#overlay": ["./src/components/overlay/index.ts"],
+      "#overlay/*": ["./src/components/overlay/*"],
+      "#navigation": ["./src/components/navigation/index.ts"],
+      "#navigation/*": ["./src/components/navigation/*"],
+      "#layout": ["./src/components/layout/index.ts"],
+      "#layout/*": ["./src/components/layout/*"],
+      "#data-display": ["./src/components/data-display/index.ts"],
+      "#data-display/*": ["./src/components/data-display/*"],
+      "#typography": ["./src/components/typography/index.ts"],
+      "#typography/*": ["./src/components/typography/*"],
+      "#hooks": ["./src/components/hooks/index.ts"],
+      "#hooks/*": ["./src/components/hooks/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["src/**/*.stories.tsx", "src/**/*.stories.ts"]
+}

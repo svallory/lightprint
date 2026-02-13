@@ -1,0 +1,12 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { RadiusSection, ThemeLayout } from 'storybook-addon-design-system-docs/components/theme';
+import { borderRadius } from 'design-system-docs:theme';
+
+// Required for Storybook indexer
+export const __ignore = {};
+
+<Meta title="Design System/Radius" />
+
+<ThemeLayout title="Border Radius">
+  <RadiusSection entries={borderRadius.entries} />
+</ThemeLayout>

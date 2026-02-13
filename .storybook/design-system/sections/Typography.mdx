@@ -1,0 +1,21 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { TypographySection, ThemeLayout } from 'storybook-addon-design-system-docs/components/theme';
+import { typography } from 'design-system-docs:theme';
+
+// Required for Storybook indexer
+export const __ignore = {};
+
+<Meta title="Design System/Typography" />
+
+<ThemeLayout title="Typography">
+  <TypographySection
+    customFamilies={typography.customFamilies}
+    builtInFamilies={typography.builtInFamilies}
+    fontWeights={typography.fontWeights}
+    fontSizes={typography.fontSizes}
+    allWeightKeys={typography.allWeightKeys}
+    allSizeKeys={typography.allSizeKeys}
+    defaultSampleText="Lorem ipsum dolor sit amet."
+    showOnlyCustom={false}
+  />
+</ThemeLayout>

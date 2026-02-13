@@ -1,0 +1,12 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { ShadowsSection, ThemeLayout } from 'storybook-addon-design-system-docs/components/theme';
+import { shadows } from 'design-system-docs:theme';
+
+// Required for Storybook indexer
+export const __ignore = {};
+
+<Meta title="Design System/Shadows" />
+
+<ThemeLayout title="Shadows">
+  <ShadowsSection entries={shadows.entries} />
+</ThemeLayout>
