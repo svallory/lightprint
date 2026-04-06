@@ -4,6 +4,7 @@ import * as React from 'react'
 import { Drawer as DrawerPrimitive } from 'vaul'
 
 import { cn } from '@/lib/utils'
+import { useOverlayPortalContainer } from './portal-container-context'
 
 function Drawer({
   ...props
@@ -18,9 +19,18 @@ function DrawerTrigger({
 }
 
 function DrawerPortal({
+  container,
   ...props
 }: React.ComponentProps<typeof DrawerPrimitive.Portal>) {
-  return <DrawerPrimitive.Portal data-slot="drawer-portal" {...props} />
+  const portalContainer = useOverlayPortalContainer()
+
+  return (
+    <DrawerPrimitive.Portal
+      data-slot="drawer-portal"
+      container={container ?? portalContainer ?? undefined}
+      {...props}
+    />
+  )
 }
 
 function DrawerClose({
