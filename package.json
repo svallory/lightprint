@@ -37,67 +37,67 @@
     },
     "./inputs": {
       "types": "./dist/components/inputs/index.d.ts",
-      "import": "./dist/inputs/index.js"
+      "import": "./dist/components/inputs/index.js"
     },
     "./inputs/*": {
       "types": "./dist/components/inputs/*.d.ts",
-      "import": "./dist/inputs/*.js"
+      "import": "./dist/components/inputs/*.js"
     },
     "./feedback": {
       "types": "./dist/components/feedback/index.d.ts",
-      "import": "./dist/feedback/index.js"
+      "import": "./dist/components/feedback/index.js"
     },
     "./feedback/*": {
       "types": "./dist/components/feedback/*.d.ts",
-      "import": "./dist/feedback/*.js"
+      "import": "./dist/components/feedback/*.js"
     },
     "./overlay": {
       "types": "./dist/components/overlay/index.d.ts",
-      "import": "./dist/overlay/index.js"
+      "import": "./dist/components/overlay/index.js"
     },
     "./overlay/*": {
       "types": "./dist/components/overlay/*.d.ts",
-      "import": "./dist/overlay/*.js"
+      "import": "./dist/components/overlay/*.js"
     },
     "./navigation": {
       "types": "./dist/components/navigation/index.d.ts",
-      "import": "./dist/navigation/index.js"
+      "import": "./dist/components/navigation/index.js"
     },
     "./navigation/*": {
       "types": "./dist/components/navigation/*.d.ts",
-      "import": "./dist/navigation/*.js"
+      "import": "./dist/components/navigation/*.js"
     },
     "./layout": {
       "types": "./dist/components/layout/index.d.ts",
-      "import": "./dist/layout/index.js"
+      "import": "./dist/components/layout/index.js"
     },
     "./layout/*": {
       "types": "./dist/components/layout/*.d.ts",
-      "import": "./dist/layout/*.js"
+      "import": "./dist/components/layout/*.js"
     },
     "./data-display": {
       "types": "./dist/components/data-display/index.d.ts",
-      "import": "./dist/data-display/index.js"
+      "import": "./dist/components/data-display/index.js"
     },
     "./data-display/*": {
       "types": "./dist/components/data-display/*.d.ts",
-      "import": "./dist/data-display/*.js"
+      "import": "./dist/components/data-display/*.js"
     },
     "./typography": {
       "types": "./dist/components/typography/index.d.ts",
-      "import": "./dist/typography/index.js"
+      "import": "./dist/components/typography/index.js"
     },
     "./typography/*": {
       "types": "./dist/components/typography/*.d.ts",
-      "import": "./dist/typography/*.js"
+      "import": "./dist/components/typography/*.js"
     },
     "./hooks": {
       "types": "./dist/components/hooks/index.d.ts",
-      "import": "./dist/hooks/index.js"
+      "import": "./dist/components/hooks/index.js"
     },
     "./hooks/*": {
       "types": "./dist/components/hooks/*.d.ts",
-      "import": "./dist/hooks/*.js"
+      "import": "./dist/components/hooks/*.js"
     },
     "./styles": "./src/styles/globals.css"
   },

@@ -33,10 +33,11 @@ const entries: Record<string, string> = {
   // Main entry
   index: path.resolve(dirname, 'src/index.ts'),
 
-  // Component groups
+  // Component groups — prefix with 'components/' so JS lands in dist/components/*/
+  // matching where tsc emits declarations (rootDir=src → dist/components/*)
   ...Object.fromEntries(
     componentGroups.map(group => [
-      `${group}/index`,
+      `components/${group}/index`,
       path.resolve(dirname, `src/components/${group}/index.ts`)
     ])
   ),
@@ -44,7 +45,7 @@ const entries: Record<string, string> = {
   // Individual components
   ...Object.fromEntries(
     componentFiles.map(file => {
-      const relativePath = file.replace(/^src\/components\//, '').replace(/\.tsx$/, '');
+      const relativePath = file.replace(/^src\//, '').replace(/\.tsx$/, '');
       return [relativePath, path.resolve(dirname, file)];
     })
   )
