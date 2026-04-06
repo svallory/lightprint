@@ -49,7 +49,7 @@ ListItem.displayName = 'ListItem';
 
 export const Default: Story = {
   render: () => (
-    <NavigationMenu>
+    <NavigationMenu className="self-start">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>

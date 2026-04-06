@@ -1,6 +1,8 @@
 import type { Preview } from '@storybook/react-vite';
 import { withDarkMode } from './darkModeDecorator';
+import { DocsPage } from './docsPage';
 import '../src/styles/globals.css';
+import './docsPage.css';
 
 const preview: Preview = {
   decorators: [withDarkMode],
@@ -22,6 +24,10 @@ const preview: Preview = {
   },
 
   parameters: {
+    docs: {
+      page: DocsPage,
+    },
+
     controls: {
       matchers: {
         color: /(background|color)$/i,

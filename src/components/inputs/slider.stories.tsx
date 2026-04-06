@@ -12,7 +12,17 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => (
-    <Slider defaultValue={[50]} max={100} step={1} className="w-[60%]" />
+  args: {
+    defaultValue: [50],
+    max: 100,
+    step: 1,
+  },
+  render: (args) => (
+    <div className="w-[720px] max-w-full px-6">
+      <Slider
+        {...args}
+        className="w-full [&_[data-slot=slider-track]]:h-2"
+      />
+    </div>
   ),
 };

@@ -1,0 +1,110 @@
+.lp-docs-theme-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.lp-docs-story-frame {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lp-docs-theme-preview {
+  margin: 0;
+}
+
+.lp-docs-theme-preview-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lp-docs-theme-surface {
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 1rem;
+}
+
+.lp-docs-theme-surface .sbdocs-preview {
+  margin: 0;
+  background: var(--card) !important;
+  color: var(--foreground) !important;
+  border-color: var(--border) !important;
+  box-shadow: none !important;
+}
+
+.lp-docs-theme-surface .sbdocs-preview > :first-child {
+  background: var(--card) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.lp-docs-theme-surface .sbdocs-preview .docs-story {
+  background: var(--card) !important;
+}
+
+.lp-docs-theme-surface .sbdocs-preview .docs-story > :first-child {
+  background: var(--background) !important;
+}
+
+.lp-docs-theme-surface .sbdocs-preview > :first-child button,
+.lp-docs-theme-surface .sbdocs-preview > :first-child a {
+  color: var(--foreground) !important;
+}
+
+.lp-docs-theme-surface .sbdocs-preview .docblock-code-toggle {
+  color: var(--foreground) !important;
+  background: var(--card) !important;
+  border-top: 1px solid var(--border) !important;
+  border-left: 1px solid var(--border) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.lp-docs-theme-surface .sbdocs-preview .docblock-code-toggle:not(:last-child) {
+  border-right: 1px solid var(--border) !important;
+}
+
+.lp-docs-theme-surface .sbdocs-preview .docblock-code-toggle:focus-visible {
+  outline: 1px solid var(--ring) !important;
+  outline-offset: -1px;
+  box-shadow: none !important;
+}
+
+.lp-docs-theme-surface .sbdocs-preview pre {
+  background: #262626 !important;
+}
+
+.lp-docs-theme-surface .innerZoomElementWrapper > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+}
+
+.lp-docs-theme-surface .docs-story > :first-child,
+.lp-docs-theme-surface .docs-story > :first-child > :first-child,
+.lp-docs-theme-surface .docs-story > :first-child .innerZoomElementWrapper,
+.lp-docs-theme-surface .docs-story > :first-child .innerZoomElementWrapper > div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.lp-docs-theme-surface:not(.dark) .sbdocs-preview > div:not(.docs-story):last-child button {
+  color: var(--foreground) !important;
+  background: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.lp-docs-theme-surface [data-story-block='true'] {
+  display: flex;
+  width: 100% !important;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
